@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speedomass</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .tabs {
+      display: flex;
+      cursor: pointer;
+    }
+
+    /* .tab {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #fed9d9;
+      margin-right: 5px;
+    } */
+
+    .tab-content {
+      display: none;
+    }
+  </style>
+  <!--css bootstrap cdn-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!--font awesome cdn  link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--css stylesheet-->
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- favicon -->
+  <link rel="icon" href="footer logo.png">
+
+
+  <!-- Testimonials link -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg " style="border-bottom: solid 2px gray;margin-left: 30px;margin-right: 30px;">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-image" style="width: 200px;" href="index.html">
+        <img src="./assets/photo/Screenshot_2024-01-08_120333-removebg-preview.png" width="100%" alt="alternative"></a>
+
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: auto;">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link " href="about.html" role="button" aria-expanded="false">
+              About Us
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="service.html" role="button" aria-expanded="false">
+              Services
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link " href="app development.html" role="button" aria-expanded="false">
+              Case Studies
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="web development.html">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- search icon -->
+          <!-- <div class="col nav-sociallink-right">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div> -->
+
+        </ul>
+
+        <a href="joinus.html" class="btn btn-primary" target="_top">Join Us</a>
+
+      </div>
+    </div>
+  </nav>
+  
+  <!--box 1 Form input -->
+  <div class="container-fluid ">
+    <div style="display: flex ; justify-content: center;" >
+      <img src="./assets/photo/Group 11.png"  class="b-5 px-2"  alt="" style=" position: absolute; z-index: 3;">
+    </div>
+    <div style="display: flex ; justify-content: start; position: relative;" >
+      <img src="./assets/photo/Group 11.png"  class="m-5 py-5" alt="" style=" position: absolute; z-index: 1;">
+    </div>
+    <div class="row box1">
+      <div class="col-lg box1a"><span style="font-size: 25px;color: rgba(222, 169, 99, 0.932);font-weight: bold;"><br>We
+        Built Teams Thats Built </span><br><br>
+        <span class="box1-heading">YOUR SOFTWARE</span><br>
+        <p style="font-size: 40px;"></p> Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+        Turpis consectetur pulvinar auctor Turpis consectetur pulvinar auctor
+        vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.
+        vestibulum quisque. quisque ante interdum consectetuer habitant blandit.</p>
+        <br>
+        <a href="index.html" class="btn btn-primary rounded-2" target="_top">Discover More</a>
+        <br>
+      </div>
+
+
+      <!-- form -->
+      <div class="col box1b">
+        <form>
+          <div class="row form-row">
+            <div class="col-12">
+              <input type="text" class="form-control" placeholder="Enter Your Name">
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Country Of Residence</option>
+                <option>India</option>
+                <option>America</option>
+                <option>Canada</option>
+                <option>Sri Lanka</option>
+              </select>
+            </div>
+            <br>
+            <br>
+
+            <div class="col-6">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-6">
+              <input type="number" class="form-control" placeholder="Phone">
+            </div>
+
+            <br>
+            <br>
+            <div class="form-group">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Service Required</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <br>
+            <br>
+            <div class="col-12">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Type your requirements here..."></textarea>
+            </div>
+            <br>
+            <br>
+            <div class="col-10" style="margin: auto;">
+              <br>
+              <input type="submit" class="form-control" value="REQUEST A QUOTE"
+                style="color: #11379b; background-color: white; border-radius: 20px;font-weight: bold;">
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!--box 2 stay up-->
+  <div class="container-fluid ">
+    <div class="row box2">
+      <div class="col-lg box2a"><span
+          style="font-size: 25px;color:  rgba(222, 169, 99, 0.932);font-weight: bold;"><br>About Our
+          Company</span><br><br>
+        <span class="box2-heading">Stay Up Stay Running Stay Protected</span><br>
+        <p style="font-size: 40px;"></p> Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+        Turpis consectetur pulvinar auctor
+        vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.</p>
+        <br>
+
+        <div class="row">
+          <div class="col-6"><i class="fa-solid fa-award"></i><span
+              style="position: relative;bottom: 5px;left: 10px;">Award Winning</span></div>
+          <div class="col-6"><i class="fa-solid fa-headset"></i><span
+              style="position: relative;bottom: 5px;left: 10px;">24/7 Support</span></div>
+          <br>
+          <br>
+          <div class="col-6"><i class="fa-solid fa-wand-magic-sparkles"></i><span
+              style="position: relative;bottom: 5px;left: 10px;">Professional Staff</span></div>
+          <div class="col-6"><i class="fa-solid fa-dollar-sign"></i><span
+              style="position: relative;bottom: 5px;left: 10px;">Fair Prices</span></div>
+        </div>
+
+        <br>
+        <br>
+
+        <a href="index.html" class="btn btn-primary" target="_top">Start A Project</a>
+        <br>
+        <br>
+      </div>
+
+      <div class="col box2b">
+        <img src="./assets/photo/img_1-removebg-preview.png" alt="Missing image" height="auto" width="80%"
+          style="margin-left:3vw;">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- box 3 icons-->
+
+  <div class="container-fluid">
+    <div class="row box3">
+      <div class="col-lg-3 col-sm-6 box3-col">
+        <div><i class="fa-solid fa-leaf"></i></div>
+        <div style="line-height: 10px; margin-left: 30px;">
+          <h1>2013</h1>
+          <p>Founded Years</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 box3-col">
+        <div><i class="fa-solid fa-user-group"></i></div>
+        <div style="line-height: 10px;margin-left: 36px;">
+          <h1>50+</h1>
+          <p>Team Member</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 box3-col">
+        <div><i class="fa-solid fa-user-plus"></i></div>
+        <div style="line-height: 10px;margin-left: 28px;">
+          <h1>550+</h1>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 box3-col">
+        <div><i class="fa-solid fa-boxes-stacked"></i></div>
+        <div style="line-height: 10px;margin-left: 30px;">
+          <h1>500+</h1>
+          <p>Successful Projects</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- box 4 Case Studies-->
+  <div> 
+    <h1 class="pt-5 px-3" style="font-weight: bold;color: #11379b;">Case Studies Our Featured Projects</h1>
+  </div>
+  <div class="container-fluid">
+    <div class="row box4">
+      <div class="col-lg-3 box4a">
+        <ul class="mt-5  p-2" style="text-align: center;">
+          <li class="list-group-item p-2"><a class="btn btn-primary tab" onclick="openTab(event, 'tab1')">Mobile
+              Apps</a></li>
+          <li class="list-group-item p-2"><a class="btn btn-primary tab" onclick="openTab(event, 'tab2')">Web
+              Development</a></li>
+          <li class="list-group-item p-2"><a class="btn btn-primar tab" onclick="openTab(event, 'tab3')">Dashboard
+              Designs</a></li>
+          <li class="list-group-item p-2"><a class="btn btn-primary tab" onclick="openTab(event, 'tab4')">Artificial
+              Intelligence</a></li>
+          <li class="list-group-item "><a class="btn btn-primary tab" onclick="openTab(event, 'tab5')">Blockchain
+              Development</a></li>
+        </ul>
+      </div>  
+      <div class="col-lg-9"> 
+        <div class=" box4b px-4 py-2 active-tab tab-content" id="tab1">
+            <div class="row">
+              <div class="col-lg-5 box4b-col  ">
+                <br>
+                <h1 style="font-weight: bold;">Mobile Apps</h1>
+                <p>Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+                  Turpis consectetur pulvinar auctor Turpis consectetur pulvinar auctor
+                  vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.
+                  vestibulum quisque. quisque ante interdum consectetuer.</p>
+                <br>
+                <a href="index.html" class="btn btn-primary " target="_top">Read More</a>
+              </div>
+
+              <div class="col-lg box4b-col">
+                <img src="./assets/photo/mobile.png" alt="Missing image" height="auto" width="80%"
+                  style="margin-left:12px;">
+              </div>
+
+            </div>
+          </div>
+          <div class="tab-content" id="tab2">
+            <div class=" box4b  px-4 py-2 " id="mobileapp">
+              <div class="row">
+                <div class="col-lg-5 box4b-col">
+                  <br>
+                  <h1 style="font-weight: bold;">Web Development</h1>
+                  <p>Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+                    Turpis consectetur pulvinar auctor Turpis consectetur pulvinar auctor
+                    vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.
+                    vestibulum quisque. quisque ante interdum consectetuer.</p>
+                  <br>
+                  <a href="index.html" class="btn btn-primary" target="_top">Read More</a>
+                </div>
+  
+                <div class="col box4b-col">
+                  <img src="./assets/photo/mobile.png" alt="Missing image" height="auto" width="80%"
+                    style="margin-left:12px;">
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab3">
+            <div class=" box4b  px-4 py-2  " id="mobileapp">
+              <div class="row">
+                <div class="col-lg-5  box4b-col">
+                  <br>
+                  <h1 style="font-weight: bold;">Dashboard Designs</h1>
+                  <p>Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+                    Turpis consectetur pulvinar auctor Turpis consectetur pulvinar auctor
+                    vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.
+                    vestibulum quisque. quisque ante interdum consectetuer.</p>
+                  <br>
+                  <a href="index.html" class="btn btn-primary" target="_top">Read More</a>
+                </div>
+  
+                <div class="col box4b-col">
+                  <img src="./assets/photo/mobile.png" alt="Missing image" height="auto" width="80%"
+                    style="margin-left:12px;">
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab4">
+            <div class=" box4b  px-4 py-2 " id="mobileapp">
+              <div class="row">
+                <div class="col-lg box4b-col">
+                  <br>
+                  <h1 style="font-weight: bold;">Artificial intelligence</h1>
+                  <p>Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+                    Turpis consectetur pulvinar auctor Turpis consectetur pulvinar auctor
+                    vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.
+                    vestibulum quisque. quisque ante interdum consectetuer.</p>
+                  <br>
+                  <a href="index.html" class="btn btn-primary" target="_top">Read More</a>
+                </div>
+  
+                <div class="col box4b-col">
+                  <img src="./assets/photo/mobile.png" alt="Missing image" height="auto" width="80%"
+                    style="margin-left:12px;">
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab5">
+            <div class=" box4b  px-4 py-2  " id="mobileapp">
+              <div class="row">
+                <div class="col-lg box4b-col">
+                  <br>
+                  <h1 style="font-weight: bold;">Blockchain Development</h1>
+                  <p>Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+                    Turpis consectetur pulvinar auctor Turpis consectetur pulvinar auctor
+                    vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.
+                    vestibulum quisque. quisque ante interdum consectetuer.</p>
+                  <br>
+                  <a href="index.html" class="btn btn-primary" target="_top">Read More</a>
+                </div>
+  
+                <div class="col box4b-col">
+                  <img src="./assets/photo/mobile.png" alt="Missing image" height="auto" width="80%"
+                    style="margin-left:12px;">
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+
+
+
+
+  <!--box 5 Services -->
+  <div class="container-fluid">
+    <div class="row box5">
+
+      <h1 style="margin-left: 3vw;font-weight: bold;margin-bottom: 2vw;color: #11379b;">Services</h1>
+
+      <div class="col-md text-center box5a boxservice">
+        <a href="app development.html">
+          <i class="fa-solid fa-mobile-screen-button" style="color:#11379b;font-size:50px;"></i>
+          <br>
+          <br>
+          <h5 style="font-weight: bold;font-size: 25px;">Mobile App Development</h5>
+          <p>Adipiscing sociosqu placerat <br> platea rutrum ut eros vestibulum posuere dictum
+            blandit massa porttitor amet.</p>
+        </a>
+      </div>
+
+
+      <br>
+
+      <div class="col-md text-center box5b">
+        <a href="web development.html" style="color: white;text-decoration: none;">
+          <i class="fa-solid fa-laptop" style="font-size: 50px;"></i>
+          <br>
+          <br>
+          <h5 style="font-weight: bold;font-size: 25px;">Website Development</h5>
+          <p>Adipiscing sociosqu placerat <br> platea rutrum ut eros vestibulum posuere dictum
+            blandit massa porttitor amet.</p>
+        </a>
+      </div>
+
+      <br>
+
+      <div class="col-md text-center box5c">
+        <a href="#">
+          <i class="fa-solid fa-bullhorn" style="color:#11379b;font-size: 50px;"></i>
+          <br>
+          <br>
+          <h5 style="font-weight: bold;font-size: 25px;">Digital Marketing</h5>
+          <p>Adipiscing sociosqu placerat <br> platea rutrum ut eros vestibulum posuere dictum
+            blandit massa porttitor amet.</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!--box 6 Unleash Innovation-->
+  <div class="box6-background-photo">
+    <div class="container-fluid">
+      <div class="row box6">
+        <div class="col-lg-8 box6a">
+          <h5 style="font-weight: bold;font-size:calc(2.5vw + 1rem);line-height: 100%;">Unleash Innovation: Let's Build
+            <br>
+            Togethert! </h5><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ut elit tellus, luctus nec ullamcorper mattis,
+            pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing Ut elit tellus, luctus nec
+            ullamcorper mattis,
+            pulvinar dapibus leo.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            tellus, luctus nec ullamcorper mattis,
+            pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur <br> adipiscing Ut elit tellus, luctus nec
+            ullamcorper mattis,
+            pulvinar dapibus leo.</p><br>
+        </div>
+        <div class="col-lg-4 box6b">
+          <img src="./assets/photo/software-right 1.png" width="90%" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- box 7 Coding icon  -->
+  
+     <h1 style="margin-left: 3vw; font-weight: bold;margin-top: 3vw;color: #11379b;">Let's Build Long-Lasting
+          Software Together</h1>
+  <div class="container-fluid">
+    <div class="row box7">
+      <div class="col-lg   col box7a ">
+        <img src="./assets/photo/flutter.png" width="25%"  style="margin-bottom: 20px; margin-left: 2px;" alt="">
+       <br>
+        <h5 style="font-weight: bold;font-size: 1rem;">FLUTTER</h5>
+      </div>
+
+     
+
+      <div class="col-lg  box7a  col " >
+        <img src="./assets/photo/react.png" width="30%"  style="margin-bottom: 20px; margin-left: 2px;" alt="">
+      <br>
+        <h5 style="font-weight: bold;font-size: 1rem;">REACT.JS</h5>
+      </div>
+
+     
+
+      <div class="col-lg col box7a col-3 ">
+        <img src="./assets/photo/python.jpg" width="30%" style="margin-bottom: 20px; margin-left: 1px;" alt="">
+       
+        <br>
+        <h5 style="font-weight: bold;font-size: 1rem;">PYTHON</h5>
+      </div>
+
+     
+
+      <div class="col-lg box7a col-3 ">
+        <img src="./assets/photo/django.png" width="30%"  style="margin-bottom: 20px;margin-left: 1px;"  alt="">
+        
+        <br>
+        <h5 style="font-weight: bold;font-size: 20px;">DJANGO</h5>
+      </div>
+
+
+      
+      <div class="col-lg a box7a col-3">
+        <img src="./assets/photo/angluar.png" width="35%" style="margin-bottom: 20px; margin-left: 22px;"  alt="">
+        <br>
+        <h5 style="font-weight: bold;font-size: 20px;">ANGULAR</h5>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!--box 8 Perfect Solution -->
+  <div class="container-fluid ">
+    <div class="row box8">
+      <div class="col-lg box8a"><span
+          style="font-size: 25px;color: rgba(222, 169, 99, 0.932);font-weight: bold;"><br>What We Do </span><br><br>
+        <span class="box8-heading">Perfect Solution For Your Business</span><br>
+        <p style="font-size: 40px;"></p> Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+        Turpis consectetur pulvinar auctor Turpis consectetur pulvinar auctor
+        vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.
+        vestibulum quisque. quisque ante interdum consectetuer habitant blandit.</p>
+        <br>
+        <a href="index.html" class="btn btn-primary" target="_top">Start A Project</a>
+        <br>
+      </div>
+
+
+      <div class="col box8b">
+
+        <div class="row box8b-row">
+
+          <div class="col-sm-5 text-center box8b-a">
+            <i class="fa-solid fa-mobile-screen-button" style="font-size: 50px;color: rgba(222, 169, 99, 0.932);"></i>
+            <br>
+            <br>
+            <h5 style="font-weight: bold;font-size: 25px;">Saas</h5>
+            <p>Adipiscing sociosqu placerat platea rutrum ut eros vestibulum posuere dictum
+              blandit massa porttitor amet.</p>
+          </div>
+
+          <br>
+
+          <div class="col-md-5 text-center box8b-b">
+            <i class="fa-solid fa-bullhorn" style="font-size: 50px;color: rgba(222, 169, 99, 0.932);"></i>
+            <br>
+            <br>
+            <h5 style="font-weight: bold;font-size: 25px;">Marketing</h5>
+            <p>Adipiscing sociosqu placerat <br> platea rutrum ut eros vestibulum posuere dictum
+              blandit massa porttitor amet.</p>
+          </div>
+
+          <br>
+
+          <div class="col-md-5 text-center box8b-c">
+            <i class="fa-solid fa-microchip" style="color:rgba(222, 169, 99, 0.932);font-size: 50px;"></i>
+            <br>
+            <br>
+            <h5 style="font-weight: bold;font-size: 25px;">Technology</h5>
+            <p>Adipiscing sociosqu placerat <br> platea rutrum ut eros vestibulum posuere dictum
+              blandit massa porttitor amet.</p>
+          </div>
+
+          <br>
+
+          <div class="col-md-5 text-center box8b-d">
+            <i class="fa-solid fa-building-user" style="color:rgba(222, 169, 99, 0.932);font-size: 50px;"></i>
+            <br>
+            <br>
+            <h5 style="font-weight: bold;font-size: 25px;">Designing</h5>
+            <p>Adipiscing sociosqu placerat <br> platea rutrum ut eros vestibulum posuere dictum
+              blandit massa porttitor amet.</p>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!--box 9 text-->
+  <div class="container-fluid ">
+    <div class="row box9 px-12">
+      <div class="col-xxl text-center box9a">
+        <h1 style="font-weight: bold;">Why Choose Us</h1>
+      </div>
+    </div>
+    <div class="col-xxl text-center pt-">
+      <p style="font-size: 18px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+        Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Ut elit tellus, luctus nec
+        Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Ut elit tellus, luctus nec
+        ullamcorper mattis, pulvinar dapibus leo.</p>
+    </div>
+  </div>
+  
+
+
+
+
+
+  <!--box 10 Community-->
+  <div class="container-fluid ">
+    <div class="row box10">
+
+      <div class="col-lg box10b">
+        <img src="./assets/photo/girl photo.jpg" alt="Missing image" height="auto" width="100%"
+          style="margin-left:1vw;border-radius: 30px;">
+      </div>
+
+      <div class="col box10a"><span
+          style="font-size: 25px;color:  rgba(222, 169, 99, 0.932);font-weight: bold;"><br>Join Our</span><br><br>
+        <span class="box10-heading">Community As An Investor</span><br>
+        <p style="font-size: 40px;"></p> Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+        Turpis consectetur pulvinar auctor
+        vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.</p>
+
+        <br>
+        <br>
+
+        <a href="index.html" class="btn btn-primary " target="_top">Get Started</a>
+        <br>
+        <br>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!--box 11 Variety of Article -->
+  <div class="container-fluid">
+    <div class="row box11">
+
+      <h1 style="margin-left: 3vw;font-weight: bold;margin-bottom: 2vw;color: #11379b;">Variety Of Article And Posts
+      </h1>
+
+      <div class="col-md-5 col-11 box11a">
+        <div class="row">
+          <div class="col-5" style="position: relative;left: -3vw;">
+            <div style="padding-top: 5vh;">
+              <img src="./assets/photo/article-removebg-preview.png" width="120%" alt="" style="border-radius: 3vw;">
+            </div>
+          </div>
+
+          <div class="col-7">
+            <h5 style="font-weight: bold;font-size: 25px;">Game App <br> Development</h5>
+            <p style="font-size:calc(0.5vw + 0.5rem);">Adipiscing sociosqu placerat platea dictum rutrum ut eros
+              vestibulum dictum
+              blandit massa porttitor amet.
+              Adipiscing sociosqu placerat
+            </p>
+
+            <a href="index.html" class="btn btn-primary" target="_top">Read More</a>
+            <br><br>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-5 col-11 box11b">
+        <div class="row">
+          <div class="col-5" style="position: relative;left: -3vw;">
+            <div style="padding-top: 5vh;">
+              <img src="./assets/photo/article 2.jpg" width="120%" alt="" style="border-radius: 3vw;">
+            </div>
+          </div>
+
+          <div class="col-7">
+            <h5 style="font-weight: bold;font-size: 25px;">Fitness App <br> Development</h5>
+            <p style="font-size:calc(0.5vw + 0.5rem);">Adipiscing plate sociosqu placerat platea rutrum ut eros
+              vestibulum dictum
+              blandit massa porttitor amet.
+              Adipiscing sociosqu placerat
+            </p>
+
+            <a href="index.html" class="btn btn-primary" target="_top">Read More</a>
+            <br><br>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!--box 12 WE are happy-->
+  <div class="container-fluid ">
+    <div class="row box12">
+
+      <div class="col-lg box12b">
+        <img src="./assets/photo/flowchart.jpg" alt="Missing image" height="auto" width="100%"
+          style="margin-left:1vw;border-radius: 30px;">
+      </div>
+
+      <div class="col box12a"><span style="font-size: 25px;color:  rgba(222, 169, 99, 0.932);font-weight: bold;"><br>Our
+          Clinet Feedback</span><br><br>
+        <span class="box12-heading">We Are Happy To Say Our Client Review</span><br>
+        <p style="font-size: 40px;"></p> Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+        Turpis consectetur pulvinar auctor
+        vestibulum quisque. Velit quisque ante interdum</p>
+
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="col" style="box-shadow:0px 0px 5px 0px grey;">
+            </p> Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi.
+            Turpis consectetur pulvinar auctor
+            vestibulum quisque. Velit quisque ante interdum finibus quis consectetur pulvinar auctor Turpis consectetur
+            </p>
+            <br>
+
+            <div class="row">
+              <div class="col-sm">
+                <h4 style="text-align: center;">Brandon Farries</h4>
+              </div>
+              <div class="col">
+                <div style="text-align: center;">
+                  <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                  <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                  <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                  <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                  <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <br>
+        <br>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!--footer-->
+
+  <div class="container-fluid">
+    <div class="row footer">
+
+      <div class="col-lg-5 footer-a">
+        <img src="./assets/photo/Screenshot_2024-01-08_120333-removebg-preview.png" alt="missing image"
+          style="width:200px;margin:0vw 1vw;">
+        <br>
+        <br>
+        <h5 style="font-weight: bold;">Looking To Get Started ?</h5>
+        <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Sit quas consequuntur
+          facilis esse,
+          quia necessitatibus <br> delectus dolor ea id nam fugit consequatur nostrum.</p>
+      </div>
+
+      <div class="col footer-b ">
+        <h4>Menu</h4>
+        <br>
+        <li id="footer-list"><a href="index.html" target="_top">Home</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">About US</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">Case Studay</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">Blogs</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">Carrer / Job opening</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">Privacy Policy</a></li>
+      </div>
+
+      <div class="col footer-c">
+        <h4>Services</h4>
+        <br>
+        <li id="footer-list"><a href="index.html" target="_top">Android App Development</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">iOS App Development</a></li>
+        <li id="footer-list"><a href="index.html" target="_top"> Web Design & App</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">Dashboard Design </a></li>
+        <li id="footer-list"><a href="index.html" target="_top">Blockchain Development</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">Articficial Intelligence</a></li>
+      </div>
+      <div class="col-md footer-d">
+        <h4>Get in Touch</h4>
+        <br>
+        <li id="footer-list"><a href="index.html" target="_top"> Phone: +91134123456 </a></li>
+        <li id="footer-list"><a href="index.html" target="_top"> Email: info@speedomass.com</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">Location: Location Here</a></li>
+        <li id="footer-list"><a href="index.html" target="_top">Location Here , India</a></li>
+        <div class="p-4 mt-4 sm:mt-0">
+          <i class="fa-brands fa-facebook-f text-gray-500"></i>
+          <i class="fa-brands fa-instagram text-gray-500"></i>
+          <i class="fa-brands fa-linkedin-in text-gray-500"></i>
+          <i class="fa-brands fa-x-twitter text-gray-500"></i>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+  <div style="width: 100%;height: 0.5px;background-color:gray;"></div>
+
+  <!--social link icon-->
+  <p class="text-center text-gray-500 py-4 text-sm sm:text-lg">
+    Copyright © 2024speedomass | All rights reserved designed by Umpteen innovation
+  </p>
+  </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+
+  <!--js file-->
+  <script src="App.js"></script>
+
+
+</body>
+
+</html>

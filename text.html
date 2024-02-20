@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+    <form id="contactForm">
+        <div class="container">
+            <div class="row form-row contactb">
+                <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    
+                </div>
+
+                <div class="col-md-6">
+                    <br>
+                    <label for="validationCustom03" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid email.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <br>
+                    <label for="validationCustom05" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="validationCustom05" placeholder="+91 XXX XXX XXXX"
+                        required>
+                    <div class="invalid-feedback">
+                        Please provide a valid phone number.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <br>
+                    <label for="exampleFormControlSelect1" class="form-label">Country</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Country Of Residence</option>
+                        <option>India</option>
+                        <option>America</option>
+                        <option>Canada</option>
+                        <option>Sri Lanka</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <br>
+                    <label for="radioOptions">Select Subject?</label>
+                    <div id="radioOptions"></div>
+                </div>
+
+                <div class="col-lg-12">
+                    <br>
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Type your requirements here..."></textarea>
+                </div>
+
+                <div class="col-5" style="margin: auto;">
+                    <br>
+                    <input type="submit" class="form-control" value="Submit"
+                        style="color:white; background-color:#11379b; border-radius: 20px;font-weight: bold;">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        // Function to dynamically generate radio buttons
+        function generateRadioButtons(options) {
+            var radioOptionsDiv = document.getElementById('radioOptions');
+
+            options.forEach(function (option, index) {
+                var radioDiv = document.createElement('div');
+                radioDiv.classList.add('form-check');
+
+                var radioInput = document.createElement('input');
+                radioInput.classList.add('form-check-input');
+                radioInput.type = 'radio';
+                radioInput.name = 'subjectRadio';
+                radioInput.id = 'subjectRadio' + (index + 1);
+                radioInput.value = option.value;
+
+                var radioLabel = document.createElement('label');
+                radioLabel.classList.add('form-check-label');
+                radioLabel.htmlFor = 'subjectRadio' + (index + 1);
+                radioLabel.innerText = option.label;
+
+                radioDiv.appendChild(radioInput);
+                radioDiv.appendChild(radioLabel);
+
+                radioOptionsDiv.appendChild(radioDiv);
+            });
+        }
+
+        // Example options for radio buttons
+        var radioOptions = [
+            { label: 'Subject 1', value: 'subject1' },
+            { label: 'Subject 2', value: 'subject2' },
+            { label: 'Subject 3', value: 'subject3' },
+            { label: 'Subject 4', value: 'subject4' }
+        ];
+
+        // Call the function with your desired options
+        generateRadioButtons(radioOptions);
+
+        // Add form submission logic here using JavaScript or any backend language
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Add your form submission logic here
+            // You can use the FormData object or any AJAX method to send data to the server
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

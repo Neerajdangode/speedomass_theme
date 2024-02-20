@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speedomass</title>
+
+  <!--css bootstrap cdn-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!--font awesome cdn  link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--css stylesheet-->
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- favicon -->
+  <link rel="icon" href="footer logo.png">
+
+
+  <!-- Testimonials link -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg " style="border-bottom: solid 2px gray;margin-left: 30px;margin-right: 30px;">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-image" style="width: 200px;" href="index.html">
+        <img src="./assets/photo/Screenshot_2024-01-08_120333-removebg-preview.png" width="100%" alt="alternative"></a>
+
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: auto;">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link " href="about.html" role="button" aria-expanded="false">
+              About Us
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="service.html" role="button" aria-expanded="false">
+              Services
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link " href="app development.html" role="button" aria-expanded="false">
+              Case Studies
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="web development.html">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- search icon -->
+          <!-- <div class="col nav-sociallink-right">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div> -->
+
+        </ul>
+
+        <a href="joinus.html" class="btn btn-primary" target="_top">Join Us</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="h-[300px] w-full flex justify-center items-center flex-col">
+    <h1 class="text-5xl text-[#061F61] font-semibold mb-6">Job application form</h1>
+    <p class="text-xl text-gray-500 text-center">
+      Please fill out the form below to submit your job application
+    </p>
+  </div>
+
+ 
+
+
+
+
+  <div class="container-fluid">
+    <div class="row category">
+      <div class="col-md-6 text-center">
+        <a href="index.html" class="btn btn-primary" target="_top">Category</a>
+        <a href="index.html" class="btn btn-primary" target="_top">Category</a>
+        <a href="index.html" class="btn btn-primary" target="_top">Category</a>
+        <a href="index.html" class="btn btn-primary" target="_top">Category</a>
+        <br><br>
+      </div>
+
+      <div class="col-md-6">
+
+        <form class="d-flex" role="search" style="position: relative;">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <span><i class="fa-solid fa-magnifying-glass"
+              style="  color: gray;font-size: 16px;position: absolute;right: 30px;top:1vw"></i></span>
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!--Popular Post-->
+
+  <div class="container-fluid ">
+    <div class="row popular">
+      <div class="col popular-post">
+        <h1 style="font-weight: bold;font-size:calc(2vw + 1rem);;">Popular Post</h1>
+
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div>
+              <article class="popular-card">
+                <header class="card-thumb">
+                  <a href="#"><img src="./assets/photo/Group 1000001797.png"></a>
+                </header>
+
+                <div class="popular-card-body">
+                  <div class="card-category"><a href="#">pet</a></div>
+                  <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is
+                      simply...</a></h2>
+                  <br>
+                  <span style="float: left;color: gray;">By Admin</span>
+                  <span style="float: right;color: gold;">Oct 25,2023</span>
+
+                </div>
+              </article>
+            </div>
+            <br><br>
+          </div>
+
+
+
+
+          <!--Popular Post-->
+          <div class="col-md-6" style="position: relative;bottom: 6vw;">
+            <h1 style="font-weight: bold;font-size:calc(2vw + 1rem);">Recent Post</h1>
+            <div class="row">
+
+              <div class="col-lg-12 col-12">
+                <div>
+                  <article class="popular-card">
+
+                    <div class="popular-card-body">
+                      <div class="card-category"><a href="#">pet</a></div>
+                      <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is
+                          simply...</a></h2>
+                      <br>
+                      <span style="float: left;color: gray;">By Admin</span>
+                      <span style="float: right;color: gold;">Oct 25,2023</span>
+
+                    </div>
+                  </article>
+                </div>
+                <br>
+              </div>
+
+
+
+              <div class="col-lg-12 col-12">
+                <div>
+                  <article class="popular-card">
+
+                    <div class="popular-card-body">
+                      <div class="card-category"><a href="#">pet</a></div>
+                      <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is
+                          simply...</a></h2>
+                      <br>
+                      <span style="float: left;color: gray;">By Admin</span>
+                      <span style="float: right;color: gold;">Oct 25,2023</span>
+
+                    </div>
+                  </article>
+                </div>
+                <br>
+              </div>
+
+
+              <div class="col-lg-12 col-12">
+                <div>
+                  <article class="popular-card">
+
+                    <div class="popular-card-body">
+                      <div class="card-category"><a href="#">pet</a></div>
+                      <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is
+                          simply...</a></h2>
+                      <br>
+                      <span style="float: left;color: gray;">By Admin</span>
+                      <span style="float: right;color: gold;">Oct 25,2023</span>
+
+                    </div>
+                  </article>
+                </div>
+                <br>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- card flex part 1 -->
+
+  <div class="container-fluid">
+    <div class="row popular" style="padding-right: 3%;position: relative;margin-top: -5vw;">
+      <div class="col-md-4 popular-post">
+        <div>
+          <article class="popular-card">
+            <header class="card-thumb">
+              <a href="#"><img src="./assets/photo/Group 1000001797.png"></a>
+            </header>
+
+            <div class="popular-card-body">
+              <div class="card-category"><a href="#">pet</a></div>
+              <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is simply...</a>
+              </h2>
+              <br>
+              <span style="float: left;color: gray;">By Admin</span>
+              <span style="float: right;color: gold;">Oct 25,2023</span>
+
+            </div>
+          </article>
+        </div>
+        <br><br>
+      </div>
+
+      <div class="col-md-4 popular-post">
+        <div>
+          <article class="popular-card">
+            <header class="card-thumb">
+              <a href="#"><img src="./assets/photo/Group 1000001797.png"></a>
+            </header>
+
+            <div class="popular-card-body">
+              <div class="card-category"><a href="#">pet</a></div>
+              <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is simply...</a>
+              </h2>
+              <br>
+              <span style="float: left;color: gray;">By Admin</span>
+              <span style="float: right;color: gold;">Oct 25,2023</span>
+
+            </div>
+          </article>
+        </div>
+        <br><br>
+      </div>
+
+      <div class="col-md-4 popular-post">
+        <div>
+          <article class="popular-card">
+            <header class="card-thumb">
+              <a href="#"><img src="./assets/photo/Group 1000001797.png"></a>
+            </header>
+
+            <div class="popular-card-body">
+              <div class="card-category"><a href="#">pet</a></div>
+              <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is simply...</a>
+              </h2>
+              <br>
+              <span style="float: left;color: gray;">By Admin</span>
+              <span style="float: right;color: gold;">Oct 25,2023</span>
+
+            </div>
+          </article>
+        </div>
+        <br><br>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- card flex part 2 -->
+
+  <div class="container-fluid">
+    <div class="row popular" style="padding-right: 3%;position: relative;margin-top: -3vw;">
+      <div class="col-md-4 popular-post">
+        <div>
+          <article class="popular-card">
+            <header class="card-thumb">
+              <a href="#"><img src="./assets/photo/Group 1000001797.png"></a>
+            </header>
+
+            <div class="popular-card-body">
+              <div class="card-category"><a href="#">pet</a></div>
+              <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is simply...</a>
+              </h2>
+              <br>
+              <span style="float: left;color: gray;">By Admin</span>
+              <span style="float: right;color: gold;">Oct 25,2023</span>
+
+            </div>
+          </article>
+        </div>
+        <br><br>
+      </div>
+
+      <div class="col-md-4 popular-post">
+        <div>
+          <article class="popular-card">
+            <header class="card-thumb">
+              <a href="#"><img src="./assets/photo/Group 1000001797.png"></a>
+            </header>
+
+            <div class="popular-card-body">
+              <div class="card-category"><a href="#">pet</a></div>
+              <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is simply...</a>
+              </h2>
+              <br>
+              <span style="float: left;color: gray;">By Admin</span>
+              <span style="float: right;color: gold;">Oct 25,2023</span>
+
+            </div>
+          </article>
+        </div>
+        <br><br>
+      </div>
+
+      <div class="col-md-4 popular-post">
+        <div>
+          <article class="popular-card">
+            <header class="card-thumb">
+              <a href="#"><img src="./assets/photo/Group 1000001797.png"></a>
+            </header>
+
+            <div class="popular-card-body">
+              <div class="card-category"><a href="#">pet</a></div>
+              <h2 class="popular-card-title"><a href="#">Lorem Ipsum is simply dummy text Lorem Ipsum is simply...</a>
+              </h2>
+              <br>
+              <span style="float: left;color: gray;">By Admin</span>
+              <span style="float: right;color: gold;">Oct 25,2023</span>
+
+            </div>
+          </article>
+        </div>
+        <br><br>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--Join Our Newsletter-->
+  <div class="box6-background-photo">
+    <div class="container-fluid">
+      <div class="row box6">
+        <div class="col text-center box6a">
+          <h5 style="font-weight: bold;font-size:calc(2.5vw + 1rem);line-height: 100%;">Join Our Newsletter</h5><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+          </p><br>
+
+          <form>
+            <div class="row form-row" style="display: flex;justify-content: center;">
+
+              <br>
+              <br>
+              <div class="col-lg-3">
+                <input type="text" class="form-control" placeholder="Full Name"
+                  style="background-color:#4C64AA;border: 1px solid grey;border-radius: 3vw;">
+              </div>
+              <div class="col-lg-3">
+                <input type="email" class="form-control" placeholder="Enter Your Email Address"
+                  style="background-color:#4C64AA;border: 1px solid grey;border-radius: 3vw;">
+              </div>
+              <br>
+              <br>
+              <div class="col-lg-3 col-5">
+                <input type="submit" class="form-control" value="Subscribe"
+                  style="color: #11379b; background-color: white; border-radius: 20px;font-weight: bold;">
+              </div>
+
+              <br>
+              <br>
+
+
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--footer-->
+
+  <!-- Footer -->
+  <footer class="flex justify-between flex-wrap my-14 gap-[20px] sm:gap-0">
+    <div class="flex flex-col gap-4 sm:gap-8 sm:w-[280px]">
+      <img src="./assets/logo.png" alt="Logo" class="w-[150px]" />
+      <h3 class="text-xl font-bold text-[#12205C]">
+        Looking to Get Started?
+      </h3>
+      <p class="text-gray-400">
+        Ready to get started on your project? Contact us today and let us
+        help you bring your ideas to life.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-2 sm:gap-6 sm:w-[280px]">
+      <h3 class="text-2xl font-semibold text-[#071C54]">Menu</h3>
+      <a class="text-gray-500" href="#">Home</a><a class="text-gray-500" href="#">About US</a><a class="text-gray-500"
+        href="#">Case Study</a><a class="text-gray-500" href="#">Blogs</a><a class="text-gray-500" href="#">Career / Job
+        opening</a><a class="text-gray-500" href="#">Privacy Policy</a>
+    </div>
+
+    <div class="flex flex-col gap-2 sm:gap-6 sm:w-[280px]">
+      <h3 class="text-2xl font-semibold text-[#071C54]">Services</h3>
+      <a class="text-gray-500" href="#">Android App Development</a>
+      <a class="text-gray-500" href="#">iOS App Development</a>
+      <a class="text-gray-500" href="#">Web Design & Development</a>
+      <a class="text-gray-500" href="#">Dashboard Design & Development</a>
+      <a class="text-gray-500" href="#">Blockchain Development</a>
+      <a class="text-gray-500" href="#">Artificial Intelligence</a>
+    </div>
+
+    <div class="flex flex-col gap-2 sm:gap-6 sm:w-[280px]">
+      <h3 class="text-2xl font-semibold text-[#071C54]">
+        Get In touch with us
+      </h3>
+      <a class="text-gray-500" href="#">Phone: +91 134 123456</a>
+      <a class="text-gray-500" href="#">Email: info@speedomass.com</a>
+      <p class="text-gray-500">
+        Location: Location Here Location Here Location Here , India
+      </p>
+      <div class="flex justify-between mt-4 sm:mt-0">
+        <i class="fa-brands fa-facebook-f text-gray-500"></i>
+        <i class="fa-brands fa-instagram text-gray-500"></i>
+        <i class="fa-brands fa-linkedin-in text-gray-500"></i>
+        <i class="fa-brands fa-x-twitter text-gray-500"></i>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <hr />
+  <p class="text-center text-gray-500 py-4 text-sm sm:text-lg">
+    Copyright © 2024speedomass | All rights reserved designed
+
+    </div>
+
+
+    <script src="/assets/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+
+
+    <!--js file-->
+    <script src="App.js"></script>
+
+
+</body>
+
+</html>
